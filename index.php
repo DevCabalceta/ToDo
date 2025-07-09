@@ -66,7 +66,7 @@
             <!-- Imagen del sistema -->
             <div class="relative mt-16 h-80 lg:mt-8">
                 <img class="absolute top-0 left-0 w-[38rem] max-w-none rounded-md bg-white/5 ring-1 ring-white/10"
-                    src="https://tailwindcss.com/plus-assets/img/component-images/dark-project-app-screenshot.png"
+                    src="assets/images/todo.png"
                     alt="Captura del sistema"
                     width="1824" height="1080" />
             </div>

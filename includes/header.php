@@ -90,7 +90,9 @@
   </style>
   </head>
 
-  <body class="bg-gradient-to-br from-pink-100 via-pink-300 to-pink-400 min-h-screen">
+  <body class="bg-gradient-to-tr from-pink-300 via-white to-indigo-300 min-h-screen">
+
+  
 
     <!-- Mobile Top Bar -->
     <div class="md:hidden flex items-center justify-between p-4 bg-white shadow fixed w-full z-30">
