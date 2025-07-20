@@ -102,7 +102,7 @@
                 <div class="text-center">
                     <div class="flex items-center justify-center">
                     <div class="flex items-center justify-center bg-indigo-100 rounded-[49%_80%_40%_90%_/_50%_30%_70%_80%] h-20 w-20 border border-indigo-300">
-                        <i class="fa-solid fa-book text-indigo-600 text-2xl"></i>
+                        <i class="fa-solid fa-book text-blue-900 text-2xl"></i>
                     </div>
                     </div>
                     <h3 class="text-xl font-semibold pt-4 text-white">Gestión de materias</h3>
@@ -113,7 +113,7 @@
                 <div class="text-center">
                     <div class="flex items-center justify-center">
                     <div class="flex items-center justify-center bg-indigo-100 rounded-[49%_80%_40%_90%_/_50%_30%_70%_80%] h-20 w-20 border border-indigo-300">
-                        <i class="fa-solid fa-clipboard-check text-indigo-600 text-2xl"></i>
+                        <i class="fa-solid fa-clipboard-check text-blue-900 text-2xl"></i>
                     </div>
                     </div>
                     <h3 class="text-xl font-semibold pt-4 text-white">Tareas y exámenes</h3>
@@ -124,7 +124,7 @@
                 <div class="text-center">
                     <div class="flex items-center justify-center">
                     <div class="flex items-center justify-center bg-indigo-100 rounded-[49%_80%_40%_90%_/_50%_30%_70%_80%] h-20 w-20 border border-indigo-300">
-                        <i class="fa-solid fa-pen-nib text-indigo-600 text-2xl"></i>
+                        <i class="fa-solid fa-pen-nib text-blue-900 text-2xl"></i>
                     </div>
                     </div>
                     <h3 class="text-xl font-semibold pt-4 text-white">Toma de apuntes</h3>
@@ -135,7 +135,7 @@
                 <div class="text-center">
                     <div class="flex items-center justify-center">
                     <div class="flex items-center justify-center bg-indigo-100 rounded-[49%_80%_40%_90%_/_50%_30%_70%_80%] h-20 w-20 border border-indigo-300">
-                        <i class="fa-solid fa-chart-column text-indigo-600 text-2xl"></i>
+                        <i class="fa-solid fa-chart-column text-blue-900 text-2xl"></i>
                     </div>
                     </div>
                     <h3 class="text-xl font-semibold pt-4 text-white">Control de notas</h3>
@@ -146,7 +146,7 @@
                 <div class="text-center">
                     <div class="flex items-center justify-center">
                     <div class="flex items-center justify-center bg-indigo-100 rounded-[49%_80%_40%_90%_/_50%_30%_70%_80%] h-20 w-20 border border-indigo-300">
-                        <i class="fa-solid fa-bell text-indigo-600 text-2xl"></i>
+                        <i class="fa-solid fa-bell text-blue-900 text-2xl"></i>
                     </div>
                     </div>
                     <h3 class="text-xl font-semibold pt-4 text-white">Notificaciones</h3>
@@ -157,7 +157,7 @@
                 <div class="text-center">
                     <div class="flex items-center justify-center">
                     <div class="flex items-center justify-center bg-indigo-100 rounded-[49%_80%_40%_90%_/_50%_30%_70%_80%] h-20 w-20 border border-indigo-300">
-                        <i class="fa-solid fa-gauge-high text-indigo-600 text-2xl"></i>
+                        <i class="fa-solid fa-gauge-high text-blue-900 text-2xl"></i>
                     </div>
                     </div>
                     <h3 class="text-xl font-semibold pt-4 text-white">Dashboard visual</h3>
