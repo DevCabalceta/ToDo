@@ -1,0 +1,38 @@
+@media not all and (max-width: 768px) {
+    body {
+        background-size: 100%;
+    }
+}
+body {
+    background-image: url(../bg/bg.avif);
+    background-position: 0 0;
+    background-repeat: repeat-y;
+    background-size: auto;
+}
+
+.bg-brand-black {
+    background-color: #020617;
+}
+
+.text-brand-blue {
+    color: #09f;
+}
+
+.bg-brand-blue {
+    background-color: #09f
+}
+
+
+@media (width > 768px) {
+    .header-animate{
+        background-color: transparent;
+    }
+}
+
+.header-scrolled {
+  background-color: rgba(0, 0, 0, 0.3);
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 5px 50px -5px, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px;
+  backdrop-filter: blur(10px);
+}
+
+

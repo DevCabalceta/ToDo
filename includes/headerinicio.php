@@ -14,37 +14,62 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Typed.js -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./dist/css/main.css">
 
 
 </head>
-<body>
 
-    <div class="bg-white">
-        <header class="absolute inset-x-0 top-0 z-50">
-            <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
-            <div class="flex lg:flex-1">
-                <a href="#" class="-m-1.5 p-1.5">
-                <span class="sr-only">Academic ToDo</span>
-                <img class="h-8 w-auto" src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600" alt="Logo">
+<body class="bg-brand-black bg-repeat text-white overflow-x-hidden font-sans">
+
+    <header id="mainHeader" class="w-full overflow-visible z-[99999] fixed top-0 left-0 right-0 transition-all duration-300 backdrop-blur-lg bg-transparent mb-10">
+        <div class="grid items-center justify-center md:justify-normal w-full grid-cols-[auto_1fr] mx-auto text-white gap-x-10 md:flex max-w-screen-full py-4">
+
+            <div class="md:flex-grow md:basis-0 flex justify-start">
+                <a href="#" class="ml-4 flex items-center gap-2.5 font-bold transition-transform duration-300 hover:scale-110">
+                <img class="h-8 w-auto" src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=blue&shade=500" width="228" height="198" alt="Logo">
+                <span class="hidden lg:block text-[32px] tracking-wide">Academic ToDo</span>
                 </a>
             </div>
-            <div class="flex lg:hidden">
-                <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
-                <span class="sr-only">Open main menu</span>
-                <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                </svg>
-                </button>
-            </div>
-            <div class="hidden lg:flex lg:gap-x-12">
-                <a href="./index.php" class="text-sm font-semibold text-gray-900">Inicio</a>
-                <a href="#funciones" class="text-sm font-semibold text-gray-900">Funciones</a>
-                <a href="./sobrenosotros.php" class="text-sm font-semibold text-gray-900">Sobre Nosotros</a>
-            </div>
-            <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-                <a href="login.php" class="text-sm font-semibold text-gray-900">Iniciar Sesión <span aria-hidden="true">&rarr;</span></a>
-            </div>
+
+            <nav class="col-span-full overflow-x-auto row-[2/3] grid grid-rows-[0fr] transition-[grid-template-rows] data-[open]:grid-rows-[1fr] md:justify-center md:flex group/nav" aria-label="Global">
+                <ul class="flex flex-col items-center overflow-x-hidden overflow-y-hidden md:flex-row gap-x-2">
+                    <li class="flex justify-center w-full first:mt-5 md:first:mt-0 md:block md:w-auto">
+                        <a href="./index.php" class="flex items-center md:w-auto justify-center gap-2 md:px-4 md:py-2 hover:text-blue-400 md:rounded-2xl border border-transparent transition-all min-h-[50px] md:text-base px-5 py-4 text-xl duration-300 w-full">Inicio</a>
+                    </li>
+                    <li class="flex justify-center w-full first:mt-5 md:first:mt-0 md:block md:w-auto">
+                        <a href="./index.php#funciones" class="flex items-center md:w-auto justify-center gap-2 md:px-4 md:py-2 hover:text-blue-400 md:rounded-2xl border border-transparent transition-all min-h-[50px] md:text-base px-5 py-4 text-xl duration-300 w-full">Funciones</a>
+                    </li>
+                    <li class="flex justify-center w-full first:mt-5 md:first:mt-0 md:block md:w-auto">
+                        <a href="./sobrenosotros.php" class="flex items-center md:w-auto justify-center gap-2 md:px-4 md:py-2 hover:text-blue-400 md:rounded-2xl border border-transparent transition-all min-h-[50px] md:text-base px-5 py-4 text-xl duration-300 w-full">Sobre Nosotros</a>
+                    </li>
+                </ul>
             </nav>
-        </header>
-    </div>
+
+            <div class="md:flex-grow md:basis-0 flex justify-end mr-3">
+                <a href="./login.php" class="ml-4 flex items-center gap-2.5 font-bold ransition-transform duration-300 hover:scale-110">
+                    <div class="bg-blue-500 rounded-full w-10 h-10 flex items-center justify-center">
+                        <i class="fa-solid fa-user text-white"></i>
+                    </div>
+                    <span class="hidden lg:block hover:text-blue-400">Iniciar Sesión</span>
+                </a>
+            </div>
+        </div>
+
+    </header>
+
+    <script>
+        const header = document.getElementById('mainHeader');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 0) {
+            header.classList.add('header-scrolled');
+            } else {
+            header.classList.remove('header-scrolled');
+            }
+        });
+    </script>
+
+
+
 
