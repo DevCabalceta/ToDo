@@ -3,7 +3,7 @@ class Database {
     private $host = "localhost";
     private $db_name = "kanban_app"; 
     private $username = "root";
-    private $password = "JA.Cp1305"; 
+    private $password = "Gc123456"; 
 
     public $conn;
 
