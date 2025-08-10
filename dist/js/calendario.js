@@ -1,13 +1,6 @@
 $(document).ready(function () {
   let fechaActual = new Date();
 
-  const tareasSimuladas = [
-    { titulo: "Estudiar fracciones", fecha: "2025-07-08", materia: "matematicas" },
-    { titulo: "Leer capítulo 3", fecha: "2025-07-10", materia: "espanol" },
-    { titulo: "Experimento de química", fecha: "2025-07-10", materia: "ciencias" },
-    { titulo: "Resumen histórico", fecha: "2025-07-15", materia: "historia" }
-  ];
-
   function cambiarMes(offset) {
     fechaActual.setMonth(fechaActual.getMonth() + offset);
     renderizarCalendario();
@@ -49,9 +42,15 @@ $(document).ready(function () {
 
       divDia.append(numeroDia);
 
-      const tareasDelDia = tareasSimuladas.filter(t => t.fecha === fechaStr);
+      const tareasDelDia = tareas.filter(t => t.fecha_vencimiento === fechaStr);
+      
       tareasDelDia.forEach(t => {
-        $('<div>').addClass(`tarea materia-${t.materia}`).text(t.titulo).appendTo(divDia);
+        $('<div>')
+          .addClass('tarea')
+          .css('background-color', t.color || '#888') 
+          .attr('title', t.descripcion || '')
+          .text(t.titulo)
+          .appendTo(divDia);
       });
 
       calendario.append(divDia);
