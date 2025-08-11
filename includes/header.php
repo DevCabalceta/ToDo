@@ -1,3 +1,11 @@
+<?php
+session_start();
+if (!isset($_SESSION['user'])) {
+  header('Location: ./login.php');
+  exit;
+}
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -145,7 +153,7 @@
                 <i class="fas fa-gear w-5 text-center"></i>
                 <span class="ml-3 hide-when-collapsed">Configuración</span>
               </a>
-              <a href="login.php" class="flex center-when-collapsed items-center px-4 py-2 rounded hover:bg-gray-100 hover:text-indigo-600 text-gray-700">
+              <a id="logoutLink" href="api/auth/logout.php" class="flex center-when-collapsed items-center px-4 py-2 rounded hover:bg-gray-100 hover:text-indigo-600 text-gray-700">
                 <i class="fas fa-arrow-right-from-bracket w-5 text-center"></i>
                 <span class="ml-3 hide-when-collapsed">Cerrar sesión</span>
               </a>
