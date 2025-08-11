@@ -1,9 +1,11 @@
 <?php 
     include_once('includes/header.php');
-    require_once 'controllers/CalendarController.php';
+    require_once 'controllers/CalendarioController.php';
+
+    $userId = $_SESSION['user']['id'];
 
     $controller = new CalendarController();
-    $tareas = $controller->obtenerTareas();
+    $tareas = $controller->obtenerTareas($userId); 
 ?>
     <main id="mainContent" class="flex-1 p-6 transition-all duration-300 main-expanded">
         <style>

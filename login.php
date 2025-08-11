@@ -23,20 +23,6 @@
                 </a>
             </div>
 
-            <!-- <nav class="col-span-full overflow-x-auto row-[2/3] grid grid-rows-[0fr] transition-[grid-template-rows] data-[open]:grid-rows-[1fr] md:justify-center md:flex group/nav" aria-label="Global">
-                <ul class="flex flex-col items-center overflow-x-hidden overflow-y-hidden md:flex-row gap-x-2">
-                    <li class="flex justify-center w-full first:mt-5 md:first:mt-0 md:block md:w-auto">
-                        <a href="./index.php" class="flex items-center md:w-auto justify-center gap-2 md:px-4 md:py-2 hover:text-blue-400 md:rounded-2xl border border-transparent transition-all min-h-[50px] md:text-base px-5 py-4 text-xl duration-300 w-full">Inicio</a>
-                    </li>
-                    <li class="flex justify-center w-full first:mt-5 md:first:mt-0 md:block md:w-auto">
-                        <a href="./index.php#funciones" class="flex items-center md:w-auto justify-center gap-2 md:px-4 md:py-2 hover:text-blue-400 md:rounded-2xl border border-transparent transition-all min-h-[50px] md:text-base px-5 py-4 text-xl duration-300 w-full">Funciones</a>
-                    </li>
-                    <li class="flex justify-center w-full first:mt-5 md:first:mt-0 md:block md:w-auto">
-                        <a href="./sobrenosotros.php" class="flex items-center md:w-auto justify-center gap-2 md:px-4 md:py-2 hover:text-blue-400 md:rounded-2xl border border-transparent transition-all min-h-[50px] md:text-base px-5 py-4 text-xl duration-300 w-full">Sobre Nosotros</a>
-                    </li>
-                </ul>
-            </nav> -->
-
             <div class="md:flex-grow md:basis-0 flex justify-end mr-3">
                 <a href="./index.php" class="ml-4 flex items-center gap-2.5 font-bold ransition-transform duration-300 hover:scale-110">
                     <div class="bg-blue-500 rounded-full w-10 h-10 flex items-center justify-center">
@@ -53,11 +39,6 @@
   <!-- Login -->
   <div class="relative z-10 w-full max-w-md px-8 py-12 bg-white/20 backdrop-blur-xl rounded-3xl shadow-xl ring-1 ring-white/40" id="loginForm">
 
-    <!-- Fondo inferior -->
-    <!-- <div class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]" aria-hidden="true">
-    <div class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
-    </div> -->
-
     <div class="text-center mb-10">
       <h2 class="text-3xl font-bold text-blue-500">Inicia sesión en tu cuenta</h2>
       <p class="mt-2 text-sm text-white">Bienvenido de vuelta</p>
@@ -67,7 +48,7 @@
       <!-- Correo -->
       <div>
         <label for="email" class="block text-sm font-medium text-white flex items-center gap-2"><i class="fa-solid fa-envelope text-white"></i>Correo electrónico</label>
-        <input type="email" name="email" id="email" required autocomplete="email"
+        <input type="email" name="email" id="email" autocomplete="email"
               class="mt-2 w-full rounded-md border border-gray-300 bg-white px-4 py-2 text-gray-900 shadow-sm 
                       placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500" />
       </div>
@@ -79,7 +60,7 @@
           <a href="#" id="showForgot" class="text-sm text-blue-500 hover:text-blue-400 font-medium">¿Olvidaste tu contraseña?</a>
         </div>
         <div class="mt-2 relative">
-          <input type="password" name="password" id="password" required autocomplete="current-password"
+          <input type="password" name="password" id="password" autocomplete="current-password"
                 class="w-full rounded-md border border-gray-300 bg-white px-4 py-2 text-gray-900 shadow-sm 
                         placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 pr-10" />
           <button type="button" id="togglePassword" class="absolute inset-y-0 right-0 flex items-center px-3 text-blue-500 hover:text-blue-400 hover:cursor-pointer z-10">
@@ -123,7 +104,7 @@
       <!-- Nombre -->
       <div>
         <label for="name" class="block text-sm font-medium text-white flex items-center gap-2"><i class="fa-solid fa-user text-white"></i>Nombre completo</label>
-        <input type="text" name="name" id="name" required
+        <input type="text" name="name" id="name"
               class="mt-2 w-full rounded-md border border-gray-300 bg-white px-4 py-2 text-gray-900 shadow-sm 
                     placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500" />
       </div>
@@ -131,7 +112,7 @@
       <!-- Correo -->
       <div>
         <label for="email" class="block text-sm font-medium text-white flex items-center gap-2"><i class="fa-solid fa-envelope text-white"></i>Correo electrónico</label>
-        <input type="email" name="email" id="email" required autocomplete="email"
+        <input type="email" name="email" id="email" autocomplete="email"
               class="mt-2 w-full rounded-md border border-gray-300 bg-white px-4 py-2 text-gray-900 shadow-sm 
                     placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500" />
       </div>
@@ -140,7 +121,7 @@
       <div>
         <label for="password" class="block text-sm font-medium text-white flex items-center gap-2"><i class="fa-solid fa-lock text-white"></i>Contraseña</label>
         <div class="mt-2 relative">
-          <input type="password" name="password" id="password" required autocomplete="new-password"
+          <input type="password" name="password" id="password" autocomplete="new-password"
                 class="w-full rounded-md border border-gray-300 bg-white px-4 py-2 pr-10 text-gray-900 shadow-sm 
                       placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500" />
           <button type="button" id="togglePassword" class="absolute inset-y-0 right-0 flex items-center px-3 text-blue-500 hover:text-blue-400 hover:cursor-pointer z-10">
@@ -152,7 +133,7 @@
       <!-- Confirmar contraseña -->
       <div>
         <label for="confirm_password" class="block text-sm font-medium text-white flex items-center gap-2"><i class="fa-solid fa-lock text-white"></i>Confirmar contraseña</label>
-        <input type="password" name="confirm_password" id="confirm_password" required
+        <input type="password" name="confirm_password" id="confirm_password"
               class="mt-2 w-full rounded-md border border-gray-300 bg-white px-4 py-2 text-gray-900 shadow-sm 
                     placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500" />
       </div>
@@ -178,11 +159,6 @@
   <!-- Recuperar contraseña -->
   <div id="recuperacionForm" class="hidden">
     <div class="relative z-10 w-full max-w-md px-8 py-12 bg-white/20 backdrop-blur-xl rounded-3xl shadow-xl ring-1 ring-white/40">
-
-      <!-- Fondo inferior -->
-      <!-- <div class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]" aria-hidden="true">
-      <div class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
-      </div> -->
 
       <div class="text-center mb-10">
         <h2 class="text-3xl font-bold text-blue-500">¿Olvidaste tu contraseña?</h2>
@@ -215,6 +191,9 @@
 
   <!-- jQuery CDN -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- SweetAlert2 CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <!-- Custom JavaScript -->
   <script src="dist/js/main.js"></script>
 
 </body>

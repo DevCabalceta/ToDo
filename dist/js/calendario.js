@@ -1,5 +1,6 @@
 $(document).ready(function () {
   let fechaActual = new Date();
+  const tareasData = Array.isArray(tareas) ? tareas : [];
 
   function cambiarMes(offset) {
     fechaActual.setMonth(fechaActual.getMonth() + offset);
@@ -42,12 +43,12 @@ $(document).ready(function () {
 
       divDia.append(numeroDia);
 
-      const tareasDelDia = tareas.filter(t => t.fecha_vencimiento === fechaStr);
-      
+      const tareasDelDia = tareasData.filter(t => t.fecha_vencimiento === fechaStr);
+
       tareasDelDia.forEach(t => {
         $('<div>')
           .addClass('tarea')
-          .css('background-color', t.color || '#888') 
+          .css('background-color', t.color || '#888')
           .attr('title', t.descripcion || '')
           .text(t.titulo)
           .appendTo(divDia);

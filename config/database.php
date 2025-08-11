@@ -1,9 +1,9 @@
 <?php
 class Database {
     private $host = "localhost";
-    private $db_name = "kanban_app"; 
+    private $db_name = "kanban_app";
     private $username = "root";
-    private $password = "Gc123456"; 
+    private $password = "Gc123456";
 
     public $conn;
 
@@ -12,16 +12,20 @@ class Database {
 
         try {
             $this->conn = new PDO(
-                "mysql:host={$this->host};dbname={$this->db_name}",
+                "mysql:host={$this->host};dbname={$this->db_name};charset=utf8mb4",
                 $this->username,
-                $this->password
+                $this->password,
+                [
+                    PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+                    PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
+                ]
             );
-            $this->conn->exec("set names utf8");
         } catch (PDOException $e) {
-            echo "❌ Error de conexión: " . $e->getMessage();
+            // No hacer echo aquí para no romper JSON en endpoints
+            // Puedes loguear si quieres: error_log($e->getMessage());
+            return null;
         }
 
         return $this->conn;
     }
 }
-?>
