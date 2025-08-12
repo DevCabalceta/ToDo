@@ -168,7 +168,7 @@
       <input type="hidden" id="mat_id" value="">
       <div>
         <label class="block text-sm font-medium text-gray-700">Nombre de la materia</label>
-        <input id="mat_nombre" type="text" required placeholder="Ej. Matemática I"
+        <input id="mat_nombre" type="text" placeholder="Ej. Matemática I"
           class="mt-1 w-full rounded-lg border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500">
       </div>
 
@@ -214,12 +214,12 @@
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div>
           <label class="block text-sm font-medium text-gray-700">Título</label>
-          <input id="tarea_titulo" type="text" required placeholder="Ej. Leer capítulo 4"
+          <input id="tarea_titulo" type="text" placeholder="Ej. Leer capítulo 4"
             class="mt-1 w-full rounded-lg border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-pink-500">
         </div>
         <div>
           <label class="block text-sm font-medium text-gray-700">Materia</label>
-          <select id="tarea_materia" required
+          <select id="tarea_materia"
             class="mt-1 w-full rounded-lg border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-pink-500">
             <option value="">Seleccionar...</option>
             <!-- opciones por JS -->
@@ -230,7 +230,7 @@
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div>
           <label class="block text-sm font-medium text-gray-700">Estado</label>
-          <select id="tarea_estado" required
+          <select id="tarea_estado"
             class="mt-1 w-full rounded-lg border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-pink-500">
             <option value="1">Pendiente</option>
             <option value="2">En progreso</option>
@@ -239,7 +239,7 @@
         </div>
         <div>
           <label class="block text-sm font-medium text-gray-700">Fecha de vencimiento</label>
-          <input id="tarea_fecha" type="date" required
+          <input id="tarea_fecha" type="date"
             class="mt-1 w-full rounded-lg border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-pink-500">
         </div>
       </div>
