@@ -53,4 +53,4 @@ $_SESSION['user'] = [
   'email'  => $user['email']
 ];
 
-respond(true, 'Login exitoso.', ['redirect' => 'escritorio.php']);
+respond(true, 'Login exitoso.', ['redirect' => 'escritorio']);

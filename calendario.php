@@ -65,7 +65,7 @@
     .modal-card { border-radius: 16px; }
   </style>
 
-  <div id="cal-wrapper" class="max-w-7xl mx-auto w-full">
+  <div id="cal-wrapper" >
     <div class="flex flex-col sm:flex-row items-center justify-between gap-3 mb-6">
       <div>
         <h1 class="text-3xl font-bold text-gray-900 tracking-tight flex items-center gap-3">
@@ -78,11 +78,11 @@
       </div>
 
       <div class="flex items-center gap-2">
-        <button data-mes="-1" class="px-3 py-2 rounded-xl bg-white border border-gray-200 hover:bg-gray-50 shadow-sm">
+        <button data-mes="-1" class="px-3 py-2 rounded-xl bg-blue-500 text-white border border-gray-200 hover:bg-blue-400 shadow-sm">
           <i class="fas fa-chevron-left"></i>
         </button>
         <button id="btnHoy" class="px-3 py-2 rounded-xl bg-white border border-gray-200 hover:bg-gray-50 shadow-sm text-sm">Hoy</button>
-        <button data-mes="1" class="px-3 py-2 rounded-xl bg-white border border-gray-200 hover:bg-gray-50 shadow-sm">
+        <button data-mes="1" class="px-3 py-2 rounded-xl bg-blue-500 text-white border border-gray-200 hover:bg-blue-400 shadow-sm">
           <i class="fas fa-chevron-right"></i>
         </button>
       </div>
@@ -94,13 +94,13 @@
 
     <!-- Encabezados de semana -->
     <div class="grid grid-cols-7 gap-px bg-gray-200 text-center font-semibold text-xs sm:text-sm text-gray-700 mb-1 rounded-lg overflow-hidden">
-      <div class="bg-gray-100 p-2">Dom</div>
-      <div class="bg-gray-100 p-2">Lun</div>
-      <div class="bg-gray-100 p-2">Mar</div>
-      <div class="bg-gray-100 p-2">Mié</div>
-      <div class="bg-gray-100 p-2">Jue</div>
-      <div class="bg-gray-100 p-2">Vie</div>
-      <div class="bg-gray-100 p-2">Sáb</div>
+      <div class="bg-blue-500 text-white p-2">Dom</div>
+      <div class="bg-blue-500 text-white p-2">Lun</div>
+      <div class="bg-blue-500 text-white p-2">Mar</div>
+      <div class="bg-blue-500 text-white p-2">Mié</div>
+      <div class="bg-blue-500 text-white p-2">Jue</div>
+      <div class="bg-blue-500 text-white p-2">Vie</div>
+      <div class="bg-blue-500 text-white p-2">Sáb</div>
     </div>
 
     <!-- Calendario -->
@@ -175,8 +175,33 @@
     </div>
   </div>
 </template>
+<style>
+  .modal {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    inset: 0;
+    z-index: 50;
+  }
+  .modal .absolute {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+    backdrop-filter: blur(4px);
+    transition: opacity 0.2s;
+  }
+  .modal-card {
+    border-radius: 16px;
+    background: #fff;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+    margin: auto;
+    max-width: 32rem;
+    width: 100%;
+  }
+</style>
 
 <script>
   const tareas = <?php echo json_encode($tareas); ?>;
 </script>
-<script src="dist/js/calendario.js"></script>
+<script src="public/dist/js/calendario.js"></script>

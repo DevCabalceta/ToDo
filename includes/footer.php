@@ -4,7 +4,7 @@
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <!-- jQuery CDN -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <!-- <script src="dist/js/main.js"></script> -->
+  <script src="public/dist/js/main.js"></script>
 
   <script>
       // Confirmación al cerrar sesión (con id)

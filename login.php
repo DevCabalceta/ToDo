@@ -8,7 +8,7 @@
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="./dist/css/main.css">
+    <link rel="stylesheet" href="public/dist/css/main.css">
 
 </head>
 <body class="min-h-screen flex items-center justify-center relative overflow-hidden bg-brand-black bg-repeat text-white font-sans">
@@ -17,14 +17,14 @@
         <div class="grid items-center justify-center md:justify-normal w-full grid-cols-[auto_1fr] mx-auto text-white gap-x-10 md:flex max-w-screen-full py-4">
 
             <div class="md:flex-grow md:basis-0 flex justify-start">
-                <a href="index.php" class="ml-4 flex items-center gap-2.5 font-bold transition-transform duration-300 hover:scale-110">
+                <a href="home" class="ml-4 flex items-center gap-2.5 font-bold transition-transform duration-300 hover:scale-110">
                 <img class="h-8 w-auto" src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=blue&shade=500" width="228" height="198" alt="Logo">
                 <span class="hidden lg:block text-[32px] tracking-wide">Academic ToDo</span>
                 </a>
             </div>
 
             <div class="md:flex-grow md:basis-0 flex justify-end mr-3">
-                <a href="./index.php" class="ml-4 flex items-center gap-2.5 font-bold ransition-transform duration-300 hover:scale-110">
+                <a href="./home" class="ml-4 flex items-center gap-2.5 font-bold ransition-transform duration-300 hover:scale-110">
                     <div class="bg-blue-500 rounded-full w-10 h-10 flex items-center justify-center">
                         <i class="fa-solid fa-house text-white"></i>
                     </div>
@@ -194,7 +194,7 @@
   <!-- SweetAlert2 CDN -->
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <!-- Custom JavaScript -->
-  <script src="dist/js/main.js"></script>
+  <script src="public/dist/js/main.js"></script>
 
 </body>
 </html>

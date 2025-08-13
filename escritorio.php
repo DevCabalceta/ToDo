@@ -3,49 +3,56 @@
 ?>
 
     <main id="mainContent" class="flex-1 p-6 transition-all duration-300 main-expanded">
-        <div class="max-w-7xl mx-auto">
+        <div>
             <!-- Título -->
-            <h1 class="text-3xl font-bold text-gray-800 mb-6 text-center">Panel Principal</h1>
+            <div class="mb-6">
+                <h1 class="text-3xl font-bold text-gray-900 tracking-tight">
+                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-xl bg-indigo-100 text-indigo-600">
+                        <i class="fas fa-tachometer-alt"></i>
+                    </span>
+                    Panel Principal</h1>
+                <p class="text-gray-500">Visualiza tus métricas y gestiona tus tareas desde este panel principal.</p>
+            </div>
 
-            <!-- Métricas (igual que ya tenías) -->
+            <!-- Métricas -->
             <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-8 fade-in">
-            <div class="bg-white p-6 rounded-2xl shadow border-l-4 border-blue-500 text-center hover:shadow-md transition">
-                <div class="text-blue-600 mb-2">
-                <i class="fas fa-sticky-note text-2xl"></i>
+                <div class="bg-white/80 p-6 rounded-2xl shadow-lg border-l-4 border-blue-500 text-center hover:shadow-md transition">
+                    <div class="text-blue-600 mb-2">
+                    <i class="fas fa-sticky-note text-2xl"></i>
+                    </div>
+                    <h3 class="text-3xl font-bold text-blue-600" id="totalTareas">0</h3>
+                    <p class="text-gray-500 text-sm">Notas Registradas</p>
                 </div>
-                <h3 class="text-3xl font-bold text-blue-600" id="totalTareas">0</h3>
-                <p class="text-gray-500 text-sm">Notas Registradas</p>
-            </div>
 
-            <div class="bg-white p-6 rounded-2xl shadow border-l-4 border-purple-500 text-center hover:shadow-md transition">
-                <div class="text-purple-600 mb-2">
-                <i class="fas fa-book-open text-2xl"></i>
+                <div class="bg-white/80 p-6 rounded-2xl shadow-lg border-l-4 border-purple-500 text-center hover:shadow-md transition">
+                    <div class="text-purple-600 mb-2">
+                    <i class="fas fa-book-open text-2xl"></i>
+                    </div>
+                    <h3 class="text-3xl font-bold text-purple-600" id="materiasCreadas">0</h3>
+                    <p class="text-gray-500 text-sm">Materias Creadas</p>
                 </div>
-                <h3 class="text-3xl font-bold text-purple-600" id="materiasCreadas">0</h3>
-                <p class="text-gray-500 text-sm">Materias Creadas</p>
-            </div>
 
-            <div class="bg-white p-6 rounded-2xl shadow border-l-4 border-yellow-500 text-center hover:shadow-md transition">
-                <div class="text-yellow-600 mb-2">
-                <i class="fas fa-hourglass-half text-2xl"></i>
+                <div class="bg-white/80 p-6 rounded-2xl shadow-lg border-l-4 border-yellow-500 text-center hover:shadow-md transition">
+                    <div class="text-yellow-600 mb-2">
+                    <i class="fas fa-hourglass-half text-2xl"></i>
+                    </div>
+                    <h3 class="text-3xl font-bold text-yellow-600" id="tareasPendientes">0</h3>
+                    <p class="text-gray-500 text-sm">Tareas Pendientes</p>
                 </div>
-                <h3 class="text-3xl font-bold text-yellow-600" id="tareasPendientes">0</h3>
-                <p class="text-gray-500 text-sm">Tareas Pendientes</p>
-            </div>
 
-            <div class="bg-white p-6 rounded-2xl shadow border-l-4 border-green-500 text-center hover:shadow-md transition">
-                <div class="text-green-600 mb-2">
-                <i class="fas fa-check-circle text-2xl"></i>
+                <div class="bg-white/80 p-6 rounded-2xl shadow-lg border-l-4 border-green-500 text-center hover:shadow-md transition">
+                    <div class="text-green-600 mb-2">
+                    <i class="fas fa-check-circle text-2xl"></i>
+                    </div>
+                    <h3 class="text-3xl font-bold text-green-600" id="tareasCompletadas">0</h3>
+                    <p class="text-gray-500 text-sm">Tareas Completadas</p>
                 </div>
-                <h3 class="text-3xl font-bold text-green-600" id="tareasCompletadas">0</h3>
-                <p class="text-gray-500 text-sm">Tareas Completadas</p>
-            </div>
             </div>
 
             <!-- Gráfico + Notas -->
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
             <!-- Gráfico Doughnut -->
-            <div class="bg-white rounded-2xl p-6 shadow-md col-span-1 lg:col-span-2">
+            <div class="bg-white/80 rounded-2xl p-6 shadow-lg col-span-1 lg:col-span-2">
                 <div class="flex items-center justify-between mb-4">
                 <h2 class="text-lg font-semibold text-gray-800">Estado de tus tareas</h2>
                 <div class="text-xs text-gray-500">Últimos 30 días</div>
@@ -58,7 +65,7 @@
             </div>
 
             <!-- Notas estilo Apple -->
-            <div class="bg-white rounded-2xl p-6 shadow-md">
+            <div class="bg-white/80 rounded-2xl p-6 shadow-lg">
                 <div class="flex items-center justify-between mb-4">
                 <h2 class="text-lg font-semibold text-gray-800">Notas rápidas</h2>
                 <div class="text-xs text-gray-500">Toques rápidos</div>
@@ -103,4 +110,4 @@
     include_once('includes/footer.php');
 ?>
 
-<script src="dist/js/escritorio.js"></script>
+<script src="public/dist/js/escritorio.js"></script>

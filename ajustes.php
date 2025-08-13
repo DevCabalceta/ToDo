@@ -20,7 +20,7 @@
     <div class="space-y-6 lg:col-span-1">
 
       <!-- Perfil -->
-      <section class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6">
+      <section class="bg-white/80 rounded-2xl shadow-lg border border-gray-100 p-6">
         <div class="flex items-center justify-between mb-4">
           <h2 class="text-lg font-semibold text-gray-800 flex items-center gap-2">
             <i class="fas fa-user-circle text-indigo-500"></i> Perfil
@@ -58,7 +58,7 @@
       </section>
 
       <!-- Notificaciones -->
-      <section class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6">
+      <section class="bg-white/80 rounded-2xl shadow-lg border border-gray-100 p-6">
         <div class="flex items-center justify-between mb-4">
           <h2 class="text-lg font-semibold text-gray-800 flex items-center gap-2">
             <i class="fas fa-bell text-indigo-500"></i> Notificaciones
@@ -95,7 +95,7 @@
     <!-- Columna derecha (cambiar contraseña + cerrar sesión) -->
     <div class="space-y-6 lg:col-span-2">
       <!-- Cambiar contraseña -->
-      <section class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6">
+      <section class="bg-white/80 rounded-2xl shadow-lg border border-gray-100 p-6">
         <div class="flex items-center justify-between mb-4">
           <h2 class="text-lg font-semibold text-gray-800 flex items-center gap-2">
             <i class="fas fa-key text-indigo-500"></i> Cambiar contraseña
@@ -123,7 +123,7 @@
               <div class="mt-1 relative">
                 <input type="password" id="aj_pass_nueva" name="pass_nueva"
                   class="w-full rounded-lg border border-gray-300 px-3 py-2 pr-10 text-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500"
-                  placeholder="Mínimo 6 caracteres">
+                  placeholder="Mínimo 8 caracteres">
                 <button type="button" class="absolute inset-y-0 right-0 px-3 text-indigo-600 hover:text-indigo-500 toggle-visibility" data-target="#aj_pass_nueva">
                   <i class="fas fa-eye"></i>
                 </button>
@@ -161,7 +161,7 @@
       </section>
 
       <!-- Cerrar sesión -->
-      <section class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6">
+      <section class="bg-white/80 rounded-2xl shadow-lg border border-gray-100 p-6">
         <div class="flex items-center justify-between">
           <div>
             <h3 class="text-md font-semibold text-gray-800">¿Quieres salir?</h3>
@@ -182,4 +182,4 @@
 ?>
 
 <!-- JS específico de esta página -->
-<script src="dist/js/ajustes.js"></script>
+<script src="public/dist/js/ajustes.js"></script>

@@ -19,7 +19,7 @@ body {
 }
 
 .bg-brand-blue {
-    background-color: #09f
+    background-color: #0099ff;
 }
 
 
@@ -34,5 +34,9 @@ body {
   box-shadow: rgba(255, 255, 255, 0.1) 0px 5px 50px -5px, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px;
   backdrop-filter: blur(10px);
 }
+
+    .bg-brand-main {
+        background-color: #ebebf7;
+    }
 
 

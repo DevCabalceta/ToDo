@@ -3,10 +3,31 @@
 ?>
 
 <main id="mainContent" class="flex-1 p-6 transition-all duration-300 main-expanded">
-
   <style>
 
-
+    .modal {
+      display: flex !important;
+      align-items: center;
+      justify-content: center;
+      position: fixed;
+      inset: 0;
+      z-index: 50;
+    }
+    .modal .absolute {
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.5);
+      backdrop-filter: blur(6px);
+      transition: opacity 0.2s;
+    }
+    .modal-card {
+      border-radius: 16px;
+      background: #fff;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+      margin: auto;
+      max-width: 32rem;
+      width: 100%;
+    }
     /* Evitar selección de texto mientras se arrastra */
     .dragging-no-select, .dragging-no-select * {
       -webkit-user-select: none !important;
@@ -42,32 +63,46 @@
 
   <!-- Título -->
   <div class="mb-6">
-    <h1 class="text-3xl font-bold text-gray-900 tracking-tight">Gestión de Tareas</h1>
+    <h1 class="text-3xl font-bold text-gray-900 tracking-tight">
+      <span class="inline-flex items-center justify-center w-10 h-10 rounded-xl bg-indigo-100 text-indigo-600">
+        <i class="fas fa-tasks"></i>
+      </span>
+      Gestión de Tareas</h1>
     <p class="text-gray-500">Organiza y visualiza tu avance por columnas.</p>
   </div>
 
-  <!-- Métricas -->
-  <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-8">
-    <div class="bg-white rounded-2xl p-6 shadow-sm border border-indigo-100 hover:shadow-md transition">
-      <div class="text-indigo-600 mb-2"><i class="fas fa-tasks text-2xl"></i></div>
-      <h3 class="text-3xl font-bold text-indigo-600" id="totalTareas">0</h3>
-      <p class="text-gray-500 text-sm">Tareas Totales</p>
-    </div>
-    <div class="bg-white rounded-2xl p-6 shadow-sm border border-yellow-100 hover:shadow-md transition">
-      <div class="text-yellow-500 mb-2"><i class="fas fa-spinner text-2xl"></i></div>
-      <h3 class="text-3xl font-bold text-yellow-500" id="tareasProgreso">0</h3>
-      <p class="text-gray-500 text-sm">En Progreso</p>
-    </div>
-    <div class="bg-white rounded-2xl p-6 shadow-sm border border-green-100 hover:shadow-md transition">
-      <div class="text-green-600 mb-2"><i class="fas fa-check-circle text-2xl"></i></div>
-      <h3 class="text-3xl font-bold text-green-600" id="tareasCompletadas">0</h3>
-      <p class="text-gray-500 text-sm">Completadas</p>
-    </div>
-    <div class="bg-white rounded-2xl p-6 shadow-sm border border-pink-100 hover:shadow-md transition">
-      <div class="text-pink-600 mb-2"><i class="fas fa-book text-2xl"></i></div>
-      <h3 class="text-3xl font-bold text-pink-600" id="materiasRegistradas">0</h3>
-      <p class="text-gray-500 text-sm">Materias</p>
-    </div>
+  <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-8 fade-in">
+      <div class="bg-white/80 p-6 rounded-2xl shadow-lg border-l-4 border-indigo-600 text-center hover:shadow-md transition">
+          <div class="text-indigo-600 mb-2">
+          <i class="fas fa-tasks text-2xl"></i>
+          </div>
+          <h3 class="text-3xl font-bold text-indigo-600" id="totalTareas">0</h3>
+          <p class="text-gray-500 text-sm">Tareas Totales</p>
+      </div>
+
+      <div class="bg-white/80 p-6 rounded-2xl shadow-lg  border-l-4 border-yellow-500 text-center hover:shadow-md transition">
+          <div class="text-yellow-500 mb-2">
+          <i class="fas fa-spinner text-2xl"></i>
+          </div>
+          <h3 class="text-3xl font-bold text-yellow-500" id="tareasProgreso">0</h3>
+          <p class="text-gray-500 text-sm">En Progreso</p>
+      </div>
+
+      <div class="bg-white/80 p-6 rounded-2xl shadow-lg  border-l-4 border-green-600 text-center hover:shadow-md transition">
+          <div class="text-green-600 mb-2">
+          <i class="fas fa-check-circle text-2xl"></i>
+          </div>
+          <h3 class="text-3xl font-bold text-green-600" id="tareasCompletadas">0</h3>
+          <p class="text-gray-500 text-sm">Completadas</p>
+      </div>
+
+      <div class="bg-white/80 p-6 rounded-2xl shadow-lg  border-l-4 border-pink-600 text-center hover:shadow-md transition">
+          <div class="text-pink-600 mb-2">
+          <i class="fas fa-book text-2xl"></i>
+          </div>
+          <h3 class="text-3xl font-bold text-pink-600" id="materiasRegistradas">0</h3>
+          <p class="text-gray-500 text-sm">Materias</p>
+      </div>
   </div>
 
   <!-- Toolbar -->
@@ -119,7 +154,7 @@
   </div>
 
   <!-- ===== Materias (gestión) ===== -->
-  <section class="mt-8 bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
+  <section class="mt-8 bg-white/80 rounded-2xl p-6 shadow-lg border border-l-4 border-indigo-600">
     <div class="flex items-center justify-between">
       <h2 class="text-lg font-semibold text-gray-800 flex items-center gap-2">
         <i class="fas fa-book-open text-indigo-500"></i> Materias
@@ -266,4 +301,4 @@
 <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.0/Sortable.min.js"></script>
 <!-- si no tienes SweetAlert2 global aquí, puedes añadirlo: -->
 <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
-<script src="dist/js/tareas.js"></script>
+<script src="public/dist/js/tareas.js"></script>

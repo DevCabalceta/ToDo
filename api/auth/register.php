@@ -59,4 +59,4 @@ $stmt->execute([$name, $email, $hash]);
 // ⚠️ No creamos sesión aquí
 // Solo confirmamos registro y mandamos a login.php
 
-respond(true, 'Registro exitoso. Ahora puedes iniciar sesión.', ['redirect' => 'login.php']);
+respond(true, 'Registro exitoso. Ahora puedes iniciar sesión.', ['redirect' => 'login']);
