@@ -14,7 +14,7 @@ http_response_code(404);
   <meta name="theme-color" content="#0ea5e9">
   <script src="https://cdn.tailwindcss.com"></script>
   <meta name="description" content="La página que buscas no existe o fue movida." />
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='46' fill='%230ea5e9'/%3E%3Ctext x='50' y='58' font-size='48' text-anchor='middle' fill='white' font-family='Arial, Helvetica, sans-serif'%3E404%3C/text%3E%3C/svg%3E">
+  <link rel="icon" type="image/svg+xml" href="https://tailwindcss.com/favicons/favicon-32x32.png">
   <style>
     /* sutil grano para dar textura */
     .noise:before{
