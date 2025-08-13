@@ -1,9 +1,16 @@
 <?php
 class Database {
+    // Conexión en local
     private $host = "localhost";
     private $db_name = "kanban_app";
     private $username = "root";
     private $password = "Gc123456";
+
+    // Conexión en produccion
+    // private $host = "sql306.infinityfree.com";
+    // private $db_name = "if0_39695396_kanban_app";
+    // private $username = "if0_39695396";
+    // private $password = "6liNpp646EZ1T";
 
     public $conn;
 
