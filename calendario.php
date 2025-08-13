@@ -156,7 +156,7 @@
     </div>
 
     <div class="pt-4 flex justify-end gap-2">
-      <a href="tareas.php" class="px-4 py-2 rounded-xl text-sm bg-gray-100 hover:bg-gray-200 text-gray-700">Ver en Kanban</a>
+      <a href="tareas" class="px-4 py-2 rounded-xl text-sm bg-gray-100 hover:bg-gray-200 text-gray-700">Ver en Kanban</a>
       <button class="modal-close px-4 py-2 rounded-xl text-sm text-white bg-indigo-600 hover:bg-indigo-500">Cerrar</button>
     </div>
   </div>
