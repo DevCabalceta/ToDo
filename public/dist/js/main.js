@@ -31,7 +31,7 @@ $(document).ready(function () {
   /*********************************************FIN showRegistro*********************************************/
 
   /*********************************************showLogin****************************************************/
-  $(document).on('click', "#showLogin", function (){
+  $(document).on('click', "#showLogin", function (){ 
     $('#registroForm').fadeOut(200, function () {
       $(this).addClass('hidden');
       $('#loginForm').removeClass('hidden').hide().fadeIn(200);

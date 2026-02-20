@@ -20,7 +20,7 @@
                 universitarios. Creemos que una buena gestión del tiempo y los recursos es clave para el éxito académico.
             </p>
             <div class="mt-10 flex items-center justify-center gap-x-6">
-                <a href="login.php"
+                <a href="login"
                 class="rounded-md bg-brand-blue px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-lime-600">
                 Unite a nuestra comunidad
                 </a>
@@ -38,11 +38,11 @@
     <div class="mt-10 mb-10 flow-root sm:mt-20 ">
         <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-5 xl:gap-0 lg:py-16 lg:grid-cols-12">
             <div class="mr-auto place-self-center lg:col-span-7">
-                <img src="assets/images/todolaptop.png" alt="mockup" width="800" height="80"> 
+                <img src="public/assets/images/todolaptop.png" alt="mockup" width="800" height="80"> 
             </div>
 
             <div class="hidden lg:mt-0 lg:col-span-5 lg:flex justify-center">
-                <img src="assets/images/todomovil.png" alt="mockup" width="190" height="80">
+                <img src="public/assets/images/todomovil.png" alt="mockup" width="190" height="80">
             </div>                
         </div>
     </div>

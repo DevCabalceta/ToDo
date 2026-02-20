@@ -1,0 +1,45 @@
+# .htaccess en la raíz del proyecto
+Options -MultiViews
+RewriteEngine On
+
+# Si tu app está en subcarpeta:
+RewriteBase /ToDo/
+
+# 0) Raíz → /home (solo GET)
+RewriteCond %{REQUEST_URI} ^/?$ [NC]
+RewriteCond %{REQUEST_METHOD} GET
+RewriteRule ^$ home [R=302,L]
+
+# 0b) /index o /index.php → /home (solo GET)
+RewriteCond %{THE_REQUEST} \s/+(.*/)?index(?:\.php)?[\s?] [NC]
+RewriteCond %{REQUEST_METHOD} GET
+RewriteRule ^(?:.*/)?index(?:\.php)?$ home [R=301,L]
+
+# 0c) Si teclean un .php en la RAÍZ (páginas como calendario.php), devolver 404
+#    (NO afecta a /api/.../*.php ni a subcarpetas)
+RewriteCond %{THE_REQUEST} \s+/([^/\s]+)\.php[\s?] [NC]
+RewriteRule ^ - [R=404,L]
+
+# 1) Si el recurso existe (archivo o carpeta), sírvelo
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# 1b) /home → index.php (interno)
+RewriteRule ^home$ index.php [L,QSA]
+
+# 2) Quitar .php → sin extensión (solo GET; excluye index porque ya lo manejamos arriba)
+#    Nota: mantenla para compatibilidad si alguien enlazó con .php; ahora mejor redirigimos a "bonito".
+RewriteCond %{THE_REQUEST} \s/+(.+?)\.php[\s?] [NC]
+RewriteCond %{REQUEST_METHOD} GET
+RewriteCond %1 !^index$ [NC]
+RewriteRule ^ %1 [R=301,L,NE]
+
+# 3) Routing: si no existe, pero sí el .php, rutea al .php internamente
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.+)$ $1.php [L,QSA]
+
+# 404 personalizado (mantiene status 404 y muestra tu página)
+ErrorDocument 404 /ToDo/404
+
+DirectoryIndex index.php

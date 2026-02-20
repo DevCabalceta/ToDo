@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To Do</title>
+    <!-- Si tu app está en /ToDo, usa esta base web -->
+    <base href="/ToDo/">
+    <title>Academic ToDo</title>
+    <link rel="icon" type="image/svg+xml" href="https://tailwindcss.com/favicons/favicon-32x32.png">
     <!-- Tailwind CSS -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- Splide CSS -->
@@ -15,7 +18,7 @@
     <!-- Typed.js -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="./dist/css/main.css">
+    <link rel="stylesheet" href="public/dist/css/main.css">
 
 
 </head>
@@ -26,7 +29,7 @@
         <div class="grid items-center justify-center md:justify-normal w-full grid-cols-[auto_1fr] mx-auto text-white gap-x-10 md:flex max-w-screen-full py-4">
 
             <div class="md:flex-grow md:basis-0 flex justify-start">
-                <a href="#" class="ml-4 flex items-center gap-2.5 font-bold transition-transform duration-300 hover:scale-110">
+                <a href="./home" class="ml-4 flex items-center gap-2.5 font-bold transition-transform duration-300 hover:scale-110">
                 <img class="h-8 w-auto" src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=blue&shade=500" width="228" height="198" alt="Logo">
                 <span class="hidden lg:block text-[32px] tracking-wide">Academic ToDo</span>
                 </a>
@@ -35,19 +38,19 @@
             <nav class="col-span-full overflow-x-auto row-[2/3] grid grid-rows-[0fr] transition-[grid-template-rows] data-[open]:grid-rows-[1fr] md:justify-center md:flex group/nav" aria-label="Global">
                 <ul class="flex flex-col items-center overflow-x-hidden overflow-y-hidden md:flex-row gap-x-2">
                     <li class="flex justify-center w-full first:mt-5 md:first:mt-0 md:block md:w-auto">
-                        <a href="./index.php" class="flex items-center md:w-auto justify-center gap-2 md:px-4 md:py-2 hover:text-blue-400 md:rounded-2xl border border-transparent transition-all min-h-[50px] md:text-base px-5 py-4 text-xl duration-300 w-full">Inicio</a>
+                        <a href="./home" class="flex items-center md:w-auto justify-center gap-2 md:px-4 md:py-2 hover:text-blue-400 md:rounded-2xl border border-transparent transition-all min-h-[50px] md:text-base px-5 py-4 text-xl duration-300 w-full">Inicio</a>
                     </li>
                     <li class="flex justify-center w-full first:mt-5 md:first:mt-0 md:block md:w-auto">
-                        <a href="./index.php#funciones" class="flex items-center md:w-auto justify-center gap-2 md:px-4 md:py-2 hover:text-blue-400 md:rounded-2xl border border-transparent transition-all min-h-[50px] md:text-base px-5 py-4 text-xl duration-300 w-full">Funciones</a>
+                        <a href="./home#funciones" class="flex items-center md:w-auto justify-center gap-2 md:px-4 md:py-2 hover:text-blue-400 md:rounded-2xl border border-transparent transition-all min-h-[50px] md:text-base px-5 py-4 text-xl duration-300 w-full">Funciones</a>
                     </li>
                     <li class="flex justify-center w-full first:mt-5 md:first:mt-0 md:block md:w-auto">
-                        <a href="./sobrenosotros.php" class="flex items-center md:w-auto justify-center gap-2 md:px-4 md:py-2 hover:text-blue-400 md:rounded-2xl border border-transparent transition-all min-h-[50px] md:text-base px-5 py-4 text-xl duration-300 w-full">Sobre Nosotros</a>
+                        <a href="./sobrenosotros" class="flex items-center md:w-auto justify-center gap-2 md:px-4 md:py-2 hover:text-blue-400 md:rounded-2xl border border-transparent transition-all min-h-[50px] md:text-base px-5 py-4 text-xl duration-300 w-full">Sobre Nosotros</a>
                     </li>
                 </ul>
             </nav>
 
             <div class="md:flex-grow md:basis-0 flex justify-end mr-3">
-                <a href="./login.php" class="ml-4 flex items-center gap-2.5 font-bold ransition-transform duration-300 hover:scale-110">
+                <a href="./login" class="ml-4 flex items-center gap-2.5 font-bold ransition-transform duration-300 hover:scale-110">
                     <div class="bg-blue-500 rounded-full w-10 h-10 flex items-center justify-center">
                         <i class="fa-solid fa-user text-white"></i>
                     </div>

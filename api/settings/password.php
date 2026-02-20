@@ -32,8 +32,8 @@ $conf   = trim($_POST['pass_confirm'] ?? '');
 if ($actual === '' || $nueva === '' || $conf === '') {
   respond(false, 'Completa todos los campos.');
 }
-if (strlen($nueva) < 6) {
-  respond(false, 'La nueva contraseña debe tener al menos 6 caracteres.');
+if (strlen($nueva) < 8) {
+  respond(false, 'La nueva contraseña debe tener al menos 8 caracteres.');
 }
 if ($nueva !== $conf) {
   respond(false, 'La confirmación no coincide.');

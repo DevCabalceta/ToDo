@@ -17,10 +17,10 @@
             <div>
                 <h3 class="text-sm font-semibold uppercase tracking-wider mb-4">Navegación</h3>
                 <ul class="space-y-2 text-sm">
-                    <li><a href="index.php" class="hover:text-blue-400 transition">Inicio</a></li>
+                    <li><a href="home" class="hover:text-blue-400 transition">Inicio</a></li>
                     <li><a href="#funciones" class="hover:text-blue-400 transition">Funciones</a></li>
-                    <li><a href="login.php" class="hover:text-blue-400 transition">Iniciar sesión</a></li>
-                    <li><a href="register.php" class="hover:text-blue-400 transition">Crear cuenta</a></li>
+                    <li><a href="login" class="hover:text-blue-400 transition">Iniciar sesión</a></li>
+                    <li><a href="register" class="hover:text-blue-400 transition">Crear cuenta</a></li>
                 </ul>
             </div>
 
