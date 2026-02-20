@@ -97,7 +97,7 @@ if (!isset($_SESSION['user'])) {
     }
 
       aside, body {
-        background-image: url(./dist/bg/bg.avif);
+        background-image: url(./public/dist/bg/bg.avif);
         background-position: 0 0;
         background-repeat: repeat-y;
         background-size: auto;
